@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fc9x8s8dj-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fc9x8s8dj-python 
+  name: fc9x8s8dj-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: fc9x8s8dj-python 
